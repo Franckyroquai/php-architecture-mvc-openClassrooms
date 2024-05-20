@@ -19,7 +19,6 @@
                     <em>le <?php echo $post['french_creation_date']; ?></em>
                 </h3>
                 <p>
-                    
                     // On affiche le contenu du billet
                    <?= nl2br(htmlspecialchars($post['content']));
                     ?>
