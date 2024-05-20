@@ -21,6 +21,8 @@ while ($row = $statement->fetch()) {
    $posts[] = $post;
 
 }
+
+require('templates/homepage.php');
 ?>
 
 <!DOCTYPE html>
