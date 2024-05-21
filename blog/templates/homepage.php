@@ -23,7 +23,7 @@
                    <?= nl2br(htmlspecialchars($post['content']));
                     ?>
                     <br />
-                    <em><a href="#">Commentaires</a></em>
+                    <em><a href="post.php?id=<?=($post['identifier']) ?>">Commentaires</a></em>
                 </p>
             </div>
             <?php
