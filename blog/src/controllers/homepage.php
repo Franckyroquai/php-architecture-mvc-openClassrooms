@@ -1,9 +1,10 @@
 <?php
 
-require_once('src/model.php');
+require_once('src/model/post.php');
 
-function homepage() {
-	$posts = getPosts();
+function homepage()
+{
+    $posts = getPosts();
 
-	require('templates/homepage.php');
+    require('templates/homepage.php');
 }
