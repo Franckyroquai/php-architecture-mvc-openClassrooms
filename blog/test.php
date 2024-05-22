@@ -1,23 +1,24 @@
 <?php
 
-function test()
+class Comment 
 {
-    try {
-        throw new Exception('ma seconde exception');
-    } catch (Exception $exception) {
-        throw new Exception('ma troisième exception');
-        die ($exception->getMessage());
-    }
-    throw new exception('mon exception de puis une fonction');
+    public string $author;
+    public string $frenchCreationDate;
+    public string $comment;
 }
 
+$comment = new Comment();
+$comment->author = 'Auteur';
+$comment->frenchCreationDate = '10/03/2022 à 15h09';
+$comment->comment = 'Commentaire';
 
+$comment->author = 'nouvel auteur';
 
+var_dump($comment);
 
-try {
-    test();
-
-    echo "je continue";
-} catch (Exception $exception) {
-    die($exception->getMessage());
+function test(Comment $comment)
+{
+    var_dump($comment);
 }
+
+test($comment);
